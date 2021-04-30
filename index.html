@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Maklerski</title>
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Dom Maklerski | Meme Stocks</h1>
+    </header>
+    <main class="main">
+        <form class="js-form">
+            <p>
+                <label class="form__label">Kwota inwestycji w PLN: <input class="form__field js-pln" type="number" min="100" placeholder="Wpisz kwotę"
+                        step="10" required autofocus>
+                </label>
+            </p>
+            <p class="form__button--text">*Przelicz klikając poniższy obrazek</p>
+            <button class="form__button"><img class="form__image" alt="Przycisk"
+                    src="https://i.ytimg.com/vi/if-2M3K1tqk/maxresdefault.jpg"></button>
+        </form>
+
+        <table class=main__table>
+            <tr class="main__tableHeader">
+                <th class="main__tableCell" scope=col>Logo</th>
+                <th class="main__tableCell" scope=col>Nazwa Firmy</th>
+                <th class="main__tableCell" scope=col>Liczba akcji</th>
+            </tr>
+            <tr class="main__tableRow">
+               <td class="main__tableCell"><img class="main__logo" alt="GameStop logo"
+                        src="data:image/png;base64,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">
+                </td>
+               <td class="main__tableCell">GameStop (GME)</td>
+               <td class="main__tableCell"><strong class="js-gme">N/A</strong></td>
+            </tr>
+            <tr class="main__tableRow">
+              <td class="main__tableCell"><img class="main__logo" alt="Palantir logo"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAAAkCAMAAACzH1iQAAAAZlBMVEX///8AAADw8PDt7e2NjY07OztNTU3IyMg1NTVHR0f4+PhWVlbDw8Pc3NwuLi51dXXk5OTV1dViYmLOzs6UlJS8vLynp6evr68MDAxoaGhbW1u2traDg4Nubm4dHR0jIyMWFhacnJwPg42HAAAEIUlEQVRYhc2Y6bajIAyAxbVSF1yq3qq1ff+XHJKggNs5t52Ze/OnFZR8hGzqOIvc/PuDXcZX4fwi8Qa2SNf8NM0iDbNk+iU2+2Jraa35VIvgh6vIWe8t9RwW3ln3Tixlk1S3V7AF82xjDvvaXTk3vMVVwLJiM0yuNbjzXSFeV0dcUvojLv8vclVrDMdH79eGBa4uQ5kILPkPXBmM2o5ew1BtcYXqP4/woHe84dtc1RDTnzSL48uaKwI168xwtXSbXFIu8vL1OZf06uxkGmJxMy+A63bA1duX73Jdz7m2WUE9xPIDLoB+/msusR+jkGgvJ1yMUIooqeaHLS5RJVHhOitxhZFi7oaGrVSLkuPhFReEz0P+tirVTb5rc3H/QTMBHUQUhEEhSx2MPsdUjqRBGMqrLgzDQO6rjONRPhbGsVygyrPng9x+y5WecEG+Kx0eGAmtMrkKY+ICwZPAHdUy5tu3pBhJEJpPxkZVe47sVRxzJRQT8Py1El6Vq9iduThcD6knbkB+dSjkwTHuI8a5DOaUTVMHATdN4EQBccmMlfsES4bZOALG3GRzcRAvGfGA0MnuNP2iRDNztTrvhOS7EZkJTOeOiz7DvxSXNFsAda7ta4rHbfoGI3yZXLZ4CK5qBBho1FyltnSCliWuOU3DNLqdEY+aS2fGUG9cC57Fkj3WXBe536Lt2znxTriHmevW93PmS2mVyDQ+eMhwzLUkp5YxuzqCDNbpWlxdHq13EVhchsCDPXH55lh+zKVTFih72PUODT9ay8eeAPGsG93o1jZtklnniCKSvmn6Vp/j0oK4p1ydXhwNFpj6KuVDJte28PB60la0uNLRsK/iWlz4nMvMtNhvPbXvYzdhlvJdrshyudzg8q2Z73EF5safuEDcyh6ZF/VzNsApF9q07FOPczezuBBrSITLeUFAb3I57sTWYmLtcgF9qv5PGGGKC1hC5RXpZ1wOL1dYdnu1w3UzVTGTC3xrdlYwavQBl9RzMajKVX+xwzUY2l2La6Lag6KS71tcYqL8WA2EFtdIJeYmd5/LtEpLQMTFO+Pe8gMuqL8+Gcj15vxUley4XwUB51b1AMNm4cLXBZViMGTPuOZ6tcMl1NEZGZ+3ZLlV3bYEwxF1FRnrzHiEE6aXCEyMx34PW889Di/KO1zLq/ZFlTuh08+co/fiEZNeVpZyrbw08yoVrbi8y76vZyf566W0pLtcs3FABkEHuDYh1qEVF4/n+67QfFx1/tI93wsitaG2wuLCLMQfC1dGQJPd8Rf688Rj+ecbnTj363r7jadFk0GrXOE0r+satfMat3qX76QNDgk5ky6LyQvyXN58XcP7l4e3wfqvtRrP75gpwe6L/la8o68oXGxfZd6TfjkXNv6Sr0xK0pycYttU/7Twptz7IPIT8gdRazQRv5lnzgAAAABJRU5ErkJggg==">
+                </td>
+               <td class="main__tableCell">Palantir Technologies (PLTR)</td>
+               <td class="main__tableCell"><strong class="js-pltr">N/A</strong></td>
+            </tr>
+            <tr class="main__tableRow">
+              <td class="main__tableCell"><img class="main__logo" alt="AMC logo"
+                        src="https://www.marketbeat.com/logos/amc-entertainment-holdings-inc-logo.jpg"> </td>
+               <td class="main__tableCell">AMC Entmt Holdings Inc (AMC)</td>
+               <td class="main__tableCell"><strong class="js-amc">N/A</strong></td>
+            </tr>
+            <tr class="main__tableRow">
+              <td class="main__tableCell"><img class="main__logo" alt="BlackBerry logo"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAAAaCAMAAACNbz5NAAAAYFBMVEX///8AAADo6Oj29va5ubnd3d2Pj4/Ozs7w8PD5+fn8/PxERER2dnavr6/T09OWlpbHx8dUVFSEhIQ7OzsmJiZfX18yMjJra2umpqZkZGQsLCxOTk58fHwTExOenp4fHx8l83hsAAAD2UlEQVRIic1X24KjMAgl3rXe71Zt//8vNxyI1dmdmZ192fJSEwMc4EAsEd2NMV1ARPbX3GJ6E/ENJKFSHv43Hie1wPFpxu/+v/E4aQGnIBrwYOvoWUn1beJBkkyWfpL439hjjcuC1f8BVxjHccgwYn7gHeCL5G1jVAa8uh0vPpXFmPxYOG0zeV+o/CVQsSQZ2w/LRlvju8Z4ykmI/9I25c9QZJEVW0VKWvvAFosT/72TYSOQv6ljYo8cuYlP2vef4RLPjeN/i0LYwYGyUaAA/QYRW8idqKVlENQHbby6CEQBZvjXvg+Cypge7zt0PBt6nXRmeD8N+XggNaqtaXiGqQi/1q3PonqtA8KRh7QZs8H6pqxBO4SrdPLMC2tm0IBMaFtpgnohiU5zOVmI9QxmQkomtuUSzUWptR1bUNrKfM3m6Hg+Afso3HlVt3EQIMx3i/FBmDmdT9LohPa5nfUkuqekRAhd7wyHAGSxGZmmKWdng33Y7At/LopCyZ3a84ulXXtHDD6iw67Jg2BBccChcei1NdAZHOwkOHJW36EIvaZqn9pEzI0uj+SeuWWdZCVwJf8gwrMKz+WLtl0pxbS7c7fyijJ4643EOSN9HDuSW10yaVYbz6YnNXulZvMh0VKOsjHKxx9gvXimKiocYCXcQQ3KAllIa+PmQt7dVibS2Dj/7aG915LmlhI7mQOwbVJro7LngXWkreKk6MdxjMjxTCDbSnVt2267MG/QPIZbr/5G9n2+uoTYCBweV6uOvfoyNLhUuwTE5PC0UD3GzGVCTjg9U3azsuhk3B3AARXUPKjv8cn8XVzLidwPt+JRDHUcQXDB5btB5wYL2MiOBjpLf0qTE+8Az32eeuLPVtMsgb26bsyPRZpSJYGRURoudpkANxjXXkUqFeNBol/k4DA+kl5aeEzPe69Q0DpseJQkSjXB19ZZioah8WNEEgggG8yTXEFlHMgyyzJgXdS0ZkMYVF1TU9hx+/EKsx3zDMuyDFhjYGJ2ElaroI0k5R6SzylZOfhGoOdox9WqxwXD2rDb2MDTFbBXxfMiFKhkIykfj5C+lDMhPBSz2XAljQ3qvh5R6hHtjAKL863N0x4Xb4MvlAi2S7pcuQ/pDyqqav4CFJ3nVx+6rwP3vWF6IYZObQlbO4NTM53nV4dSH3NjEzyZhOBudK4AZ7uwk/1rXORh0t8naavwjhSFnKJn7SxmlfhKTsHP4B6FOad1zGvnGclddQxjRuZ6KRE5WlI8zz/8KKIkhFs/vN4UyV9/kWbepx+I2W+kfw9p3+jPxUk8x803k/UyoN9GHOlVfgEkQCftcNIlHAAAAABJRU5ErkJggg==">
+                </td>
+               <td class="main__tableCell">BlackBerry (BB)</td>
+               <td class="main__tableCell"><strong class="js-bb">N/A</strong></td>
+            </tr>
+        </table>
+    </main>
+    <footer class="footer">
+        © 2021 Piotr Doliasz. All Rights Reserved.
+        E-mail: <a class="footer__mail" href="mailto:piotrdoliasz@host.com">piotrdoliasz@host.com</a>
+    </footer>
+</body>
+
+</html>
