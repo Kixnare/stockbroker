@@ -1,0 +1,31 @@
+.table__logo {
+    max-height: 50px;
+    max-width: 150px;
+    border-radius: 5%;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    display: inline-block;
+    overflow-x: auto;
+    text-align: center;
+}
+
+.tableHeader {
+    background-color: hsl(24, 51%, 50%);
+}
+
+.tableCell {
+    border: solid 2px #000000;
+    padding: 3px;
+    text-align: center;
+}
+
+.tableRow:nth-child(even) {
+    background-color: hsl(24, 51%, 80%);
+}
+
+.tableRow:hover {
+    background-color: hsl(24, 51%, 60%);
+}

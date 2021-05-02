@@ -33,3 +33,7 @@ body {
     text-decoration: none;
     color: rgba(243, 245, 245, 0.884)
 }
+
+.main {
+    border: solid 2px black;
+}
